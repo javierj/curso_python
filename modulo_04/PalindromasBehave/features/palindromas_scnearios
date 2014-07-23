@@ -1,0 +1,29 @@
+Feature: Deteccion de listas palindromas
+  In order to detectar si una lista es palindroma
+  As usuario
+  I want indicar una lista y saber si es palindroma o no
+
+  Scenario: lista vacia
+     Given una lista vacia 
+      when compruebo si es palindroma
+      then el resultado es False
+  
+  Scenario: lista con un elemento
+     Given la lista 1
+      when compruebo si es palindroma
+      then el resultado es False
+	  
+  Scenario: lista con dos elementos distintos
+     Given la lista 1, 2
+      when compruebo si es palindroma
+      then el resultado es False
+
+  Scenario: lista con dos elementos iguales
+     Given la lista 1, 1
+      when compruebo si es palindroma
+      then el resultado es True
+	
+  Scenario: lista con tres elementos y los dos de los extremos iguales
+     Given la lista 1, 3, 1
+      when compruebo si es palindroma
+      then el resultado es True
