@@ -14,6 +14,8 @@ Implementar un validador de passwords que compruebe que una cadena de texto:
 
 Esta solución aún se puede refactorizar más.
 
+El fichero kata_passwd contiene el código implementado durante el hangout del lunes 18/02.
+
 
 
 
